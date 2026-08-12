@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/Shri_Ganesh_Paint/',
   server: {
     port: 5173,
     host: true
+     
   }
 })
