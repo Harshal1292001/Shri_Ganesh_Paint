@@ -62,7 +62,17 @@ export default function EstimateForm() {
                   type="tel"
                   name="phone"
                   value={form.phone}
-                  onChange={handleChange}
+                  onChange={(e) => {
+                    const value = e.target.value.replace(/\D/g,"").slice(0,10);
+                    handleChange({
+                      target : {
+                        name : 'phone',
+                        value : value
+                      }
+                    });
+                  }}
+                  maxlength={10}
+                  pattern="[0-9]{10}"
                   placeholder="98xxxxxxxx"
                   required
                 />
@@ -74,6 +84,7 @@ export default function EstimateForm() {
                   className="form-control-custom"
                   type="text"
                   name="area"
+                  maxlength={50}
                   value={form.area}
                   onChange={handleChange}
                   placeholder="e.g. Amalner, Jalgaon"
@@ -86,6 +97,7 @@ export default function EstimateForm() {
                   className="form-control-custom"
                   name="message"
                   rows="3"
+                  maxlength={300}
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Tell us about your painting work..."
