@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://harshal1292001.github.io/Shri_Ganesh_Paint/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

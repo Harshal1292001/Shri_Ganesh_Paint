@@ -13,7 +13,7 @@ import WhatsAppButton from './components/WhatsAppButton'
 
 export default function App() {
   return (
-    <div className="App">
+  <div className="App">
       <Navbar />
       <Hero />
       <Brands />
