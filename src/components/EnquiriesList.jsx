@@ -23,7 +23,6 @@ export default function EnquiriesList() {
     <section className="estimate-section" id="enquiries">
       <div className="container-xl">
         <h2 className="section-title">Recent Enquiries</h2>
-        <p className="section-subtitle mr">Google Sheet मधून थेट डेटा — for shop owner use</p>
 
         <div className="estimate-card" style={{ maxWidth: 820 }}>
           <button className="btn-submit" onClick={loadEnquiries} disabled={loading} style={{ maxWidth: 260 }}>
